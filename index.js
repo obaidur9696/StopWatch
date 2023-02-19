@@ -12,13 +12,11 @@ const centisecondsEl = document.getElementById("centiseconds");
 const startBtn = document.getElementById("startBtn");
 const stopBtn = document.getElementById("stopBtn");
 const resetBtn = document.getElementById("resetBtn");
-const hourBtn = document.getElementById("hourBtn");
 
 // Add event listeners to buttons
 startBtn.addEventListener("click", startStopwatch);
 stopBtn.addEventListener("click", stopStopwatch);
 resetBtn.addEventListener("click", resetStopwatch);
-hourBtn.addEventListener("click", incrementHours);
 
 // Start the stopwatch
 function startStopwatch() {
