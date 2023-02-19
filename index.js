@@ -59,11 +59,6 @@ function resetStopwatch() {
   stopBtn.disabled = true;
 }
 
-// Increment hours
-function incrementHours() {
-  hours++;
-  updateStopwatch();
-}
 
 // Update the stopwatch display
 function updateStopwatch() {
