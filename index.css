@@ -1,32 +1,47 @@
+/* Set a responsive font size for the entire stopwatch container */
 #stopwatch {
   display: flex;
-  font-size: 36px;
+  font-size: calc(20px + 1vw);
   font-weight: bold;
   margin: 20px 0;
+  flex-wrap: wrap; /* Wrap the time units onto multiple lines for smaller screens */
 }
 
+/* Style each time unit */
 #stopwatch > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px;
+  margin: 10px 20px; /* Add some margin between each time unit */
+  flex: 1; /* Distribute available space evenly among all time units */
 }
 
+/* Style the label for each time unit */
 .time-label {
-  font-size: 18px;
+  font-size: calc(12px + 0.5vw);
   font-weight: bold;
   margin-bottom: 10px;
 }
 
+/* Set a responsive font size for the time values */
+#hours,
+#minutes,
+#seconds,
+#centiseconds {
+  font-size: calc(36px + 1vw);
+}
+
+/* Style the buttons container */
 #buttons {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
+/* Style the buttons */
 button {
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: calc(14px + 0.5vw);
   font-weight: bold;
   margin: 0 10px;
   border-radius: 5px;
@@ -47,4 +62,22 @@ button {
 #resetBtn {
   background-color: grey;
   color: white;
+}
+
+/* Make the stopwatch container narrower for smaller screens */
+@media screen and (max-width: 600px) {
+  #stopwatch {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Reduce the font size for the time values on smaller screens */
+@media screen and (max-width: 400px) {
+  #hours,
+  #minutes,
+  #seconds,
+  #centiseconds {
+    font-size: calc(24px + 1vw);
+  }
 }
