@@ -1,0 +1,50 @@
+#stopwatch {
+  display: flex;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#stopwatch > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.time-label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#startBtn {
+  background-color: green;
+  color: white;
+}
+
+#stopBtn {
+  background-color: red;
+  color: white;
+}
+
+#resetBtn {
+  background-color: grey;
+  color: white;
+}
